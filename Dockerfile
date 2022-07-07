@@ -10,4 +10,4 @@ RUN pip install matplotlib
 RUN pip install seaborn
 
 COPY . .
-CMD ["python","app.py"]
+ENTRYPOINT ["python","app.py"]
