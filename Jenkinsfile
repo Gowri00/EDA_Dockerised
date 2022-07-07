@@ -12,7 +12,7 @@ pipeline {
         sh """
         chmod +x -R ${env.WORKSPACE}
         ./dev/Scripts/activate
-        cd /dev/Lib/site-packages
+        cd ./dev/Lib/site-packages
         pip install -r requirements.txt
         cd ../..
         python app.py"""
