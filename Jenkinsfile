@@ -9,8 +9,8 @@ pipeline {
 
     stage('Build') {
       steps {
+        withEnv ["HOME = ${env.WORKSPACE}"]
         sh """
-        chmod +x -R ${env.WORKSPACE}
         sudo ./dev/Scripts/activate
         pip install -r requirements.txt
         python app.py"""
