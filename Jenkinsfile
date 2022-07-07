@@ -16,7 +16,7 @@ pipeline {
         cd ./dev/Lib/site-packages
         python --version
         
-        python3 app.py"""
+        python app.py"""
         
       }
     }
