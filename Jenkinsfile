@@ -9,6 +9,7 @@ pipeline {
 
     stage('Build') {
       steps {
+        sh ".\dev\Scripts\activate"
         sh "pip install -r requirements.txt"
         sh "python app.py"
         
