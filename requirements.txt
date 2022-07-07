@@ -1,0 +1,6 @@
+flask
+pandas
+matplotlib
+seaborn
+requires.io
+pybase64
