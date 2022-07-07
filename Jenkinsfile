@@ -13,7 +13,7 @@ pipeline {
         chmod +x -R ${env.WORKSPACE}
         ./dev/Scripts/activate
         cd ./dev/Lib/site-packages
-        python -m pip install -r requirements.txt
+        python -m pip install -r EDA_Dockerised/requirements.txt
         cd ../..
         python app.py"""
         
