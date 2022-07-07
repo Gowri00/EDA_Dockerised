@@ -12,7 +12,7 @@ pipeline {
         sh """
         chmod +x -R ${env.WORKSPACE}
         ./dev/Scripts/activate
-        pip install -r requirements.txt
+        python -m pip install -r requirements.txt
         python app.py"""
         
       }
