@@ -16,7 +16,7 @@ pipeline {
         cd ./dev/Lib/site-packages
         python --version
         
-        python app.py"""
+        python /var/lib/jenkins/workspace/EDA_pipeline/app.py"""
         
       }
     }
