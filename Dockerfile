@@ -3,7 +3,7 @@ FROM python
 ENV FLASK_APP=app.python
 ENV FLASK_RUN_HOST=0.0.0.0
 
-COPY ../../jenkins/workspace/EDA_freestyle/requirements.txt requirements.txt
+COPY **/*requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 COPY . .
