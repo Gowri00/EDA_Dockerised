@@ -6,13 +6,13 @@
 
 {% block body %}
 <h2>Class feature: {{class_feature}}</h2>
-<image src="{{url_for('static',filename = '/sns-heatmap.png')}}" />
-
-
-<!--{% for column in columns %}
-    {% if loop.index != 2 %}
-       
-    {% endif %}
+<hr/>
+<h2>Dataset Heatmap</h2>
+<image src="{{url_for('static',filename = '/sns-heatmap.png')}}" height = 1500 width = 1500/>
+<hr />
+{% for hist in hists %}
+    <h2>{{titles[loop.index]}}</h2>
+    <img src="{{hist}}" alt="{{hist}}">
+    <hr/>
 {% endfor %}
--->
 {% endblock %}
