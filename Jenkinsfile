@@ -33,7 +33,7 @@ pipeline {
         sh "oc new-app ${dockerImageTag} -l version=${version}"
         sh "oc get svc"
         sh "oc status"
-        sh "oc expose dc/${projectName} --port=[5000]"
+        sh "oc expose dc/${projectName}"
       }
     }
   }
