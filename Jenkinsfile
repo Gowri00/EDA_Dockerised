@@ -34,6 +34,7 @@ pipeline {
         sh "oc get svc"
         sh "oc status"
         sh "oc expose dc/${projectName} --port=5000"
+        sh "oc describe svc dc/${projectName}"
       }
     }
   }
