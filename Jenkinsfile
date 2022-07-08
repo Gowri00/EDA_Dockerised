@@ -14,7 +14,7 @@ pipeline {
         ./dev/Scripts/activate
         pwd
         cd ./dev/Lib/site-packages
-        python --version
+        python3 --version
         python -m pip install -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt
         cd ../..
         python app.py"""
