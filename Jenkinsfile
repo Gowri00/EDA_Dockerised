@@ -1,4 +1,4 @@
-def projectName = 'EDA-tool'
+def projectName = 'eda-tool'
 def version = "0.0.${currentBuild.number}"
 def dockerImageTag = "${projectName}:${version}"
 
