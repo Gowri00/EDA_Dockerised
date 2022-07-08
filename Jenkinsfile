@@ -1,6 +1,6 @@
 def projectName = 'EDA-tool'
 def version = "0.0.${currentBuild.number}"
-def dockerImageTag = "project:${version}"
+def dockerImageTag = "${projectName}:${version}"
 
 pipeline {
   agent any
@@ -15,13 +15,12 @@ pipeline {
         pwd
         cd ./dev/Lib/site-packages
         python --version
-        docker build -t ${dockerImageTag} .
         python -m pip install -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt
         cd ../..
         python app.py"""
-        }        
+        
       }
-    
+    }
 
     stage('Build Container') {
       steps {
