@@ -13,11 +13,8 @@ pipeline {
         chmod +x -R ${env.WORKSPACE}
         ./dev/Scripts/activate
         pwd
-        cd ./dev/Lib/site-packages
         python3.8 --version
         python3.8 -m pip install --user -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt
-        cd ../..
-        
         python3.8 /var/lib/jenkins/workspace/EDA_pipeline/app.py"""
         
       }
