@@ -1,6 +1,6 @@
 def projectName = 'EDA-tool'
 def version = "0.0.${currentBuild.number}"
-def dockerImageTag = "Project:${version}"
+def dockerImageTag = "project:${version}"
 
 pipeline {
   agent any
