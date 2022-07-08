@@ -22,7 +22,7 @@ pipeline {
         python app.py"""
         }        
       }
-    }
+    
 
     stage('Build Container') {
       steps {
@@ -40,4 +40,4 @@ pipeline {
       }
     }
   }
-
+}
