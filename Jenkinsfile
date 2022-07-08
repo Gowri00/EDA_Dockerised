@@ -14,14 +14,13 @@ pipeline {
         ./dev/Scripts/activate
         pwd
         cd ./dev/Lib/site-packages
-        python --version"""
-        withEnv['PYTHONPATH="./dev/Lib/site-packages"']{
-        sh"""
+        python --version
+        apt install python3 -y
         python -m pip install -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt
         cd ../..
         python app.py"""
         }        
-      }
+      
     }
 
     stage('Build Container') {
