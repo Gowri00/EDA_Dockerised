@@ -2,5 +2,3 @@ matplotlib
 pandas
 seaborn
 flask
-requires.io
-pybase64
