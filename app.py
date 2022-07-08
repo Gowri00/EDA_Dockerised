@@ -45,12 +45,12 @@ def eda():
         class_feature = str(request.form.get("class_feature"))
         get_visualizations(class_feature)
             
-    basepath = f"./static/plots/"
-    images = os.listdir(basepath)
-    file_list = [basepath+i for i in images]
-    titles = [images[0][:-4]]
-    titles.extend([i[:-4] for i in images])
-    return render_template('eda.html', class_feature = class_feature, titles=titles,hists=file_list)
+        basepath = f"./static/plots/"
+        images = os.listdir(basepath)
+        file_list = [basepath+i for i in images]
+        titles = [images[0][:-4]]
+        titles.extend([i[:-4] for i in images])
+        return render_template('eda.html', class_feature = class_feature, titles=titles,hists=file_list)
 
 def get_visualizations(class_feature):
     columns = list(dataset.columns)
