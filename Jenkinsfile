@@ -14,7 +14,7 @@ pipeline {
         ./dev/Scripts/activate
         pwd
         python3.8 --version
-        python3.8 -m pip install --user -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt
+        python3.8 -m pip install --user -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt"""
         
       }
     }
