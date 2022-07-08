@@ -4,6 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import io
 import base64
+import os
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
 app = Flask(__name__)
