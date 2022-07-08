@@ -15,7 +15,6 @@ pipeline {
         pwd
         cd ./dev/Lib/site-packages
         python --version
-        apt install python3 -y
         docker build -t ${dockerImageTag} .
         python -m pip install -r /var/lib/jenkins/workspace/EDA_pipeline/requirements.txt
         cd ../..
